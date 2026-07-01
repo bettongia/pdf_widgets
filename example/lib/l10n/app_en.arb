@@ -1,0 +1,284 @@
+{
+  "@@locale": "en",
+  "appTitle": "quietly",
+  "@appTitle": {
+    "description": "The application title shown in the window title bar."
+  },
+  "menuFile": "File",
+  "@menuFile": {
+    "description": "The File menu label."
+  },
+  "menuOpen": "Open…",
+  "@menuOpen": {
+    "description": "The File > Open menu item. The ellipsis indicates a dialog will open."
+  },
+  "menuCloseTab": "Close Tab",
+  "@menuCloseTab": {
+    "description": "The File > Close Tab menu item, which closes the active document tab."
+  },
+  "menuQuit": "Quit",
+  "@menuQuit": {
+    "description": "The File > Quit menu item."
+  },
+  "tabCloseButton": "Close tab",
+  "@tabCloseButton": {
+    "description": "Accessible label for the close button on each document tab."
+  },
+  "emptyStateHeading": "No document open",
+  "@emptyStateHeading": {
+    "description": "Heading shown in the main area when no PDF is open."
+  },
+  "emptyStateBody": "Choose File > Open to open a PDF.",
+  "@emptyStateBody": {
+    "description": "Instructional body text shown below the empty-state heading."
+  },
+  "pageIndicator": "Page {current} of {total}",
+  "@pageIndicator": {
+    "description": "Page number indicator shown at the bottom of the viewer pane.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "previousPage": "Previous page",
+  "@previousPage": {
+    "description": "Accessible label for the previous-page button."
+  },
+  "nextPage": "Next page",
+  "@nextPage": {
+    "description": "Accessible label for the next-page button."
+  },
+  "errorOpeningFile": "Could not open file",
+  "@errorOpeningFile": {
+    "description": "Error message shown when a file cannot be opened."
+  },
+  "errorLoadingPage": "Failed to render page",
+  "@errorLoadingPage": {
+    "description": "Error message shown when a page cannot be rendered."
+  },
+  "pageSemanticLabel": "PDF page {number} of document {title}",
+  "@pageSemanticLabel": {
+    "description": "Accessibility label for the rendered PDF page canvas.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "sidebarTocTitle": "Table of Contents",
+  "@sidebarTocTitle": {
+    "description": "Title of the Table of Contents sidebar panel."
+  },
+  "sidebarThumbnailsTitle": "Page Thumbnails",
+  "@sidebarThumbnailsTitle": {
+    "description": "Title of the Page Thumbnails sidebar panel."
+  },
+  "sidebarAnnotationsTitle": "Annotations",
+  "@sidebarAnnotationsTitle": {
+    "description": "Title of the Annotations sidebar panel."
+  },
+  "sidebarSearchTitle": "Search",
+  "@sidebarSearchTitle": {
+    "description": "Title of the Search sidebar panel."
+  },
+  "sidebarInfoTitle": "Document Info",
+  "@sidebarInfoTitle": {
+    "description": "Title of the Document Info sidebar panel."
+  },
+  "sidebarCloseButton": "Close sidebar",
+  "@sidebarCloseButton": {
+    "description": "Accessible label for the close button on the sliding sidebar."
+  },
+  "railToc": "Table of Contents",
+  "@railToc": {
+    "description": "Tooltip and accessible label for the Table of Contents rail button."
+  },
+  "railThumbnails": "Page Thumbnails",
+  "@railThumbnails": {
+    "description": "Tooltip and accessible label for the Page Thumbnails rail button."
+  },
+  "railAnnotations": "Annotations",
+  "@railAnnotations": {
+    "description": "Tooltip and accessible label for the Annotations rail button."
+  },
+  "railSearch": "Search",
+  "@railSearch": {
+    "description": "Tooltip and accessible label for the Search rail button."
+  },
+  "railInfo": "Document Info",
+  "@railInfo": {
+    "description": "Tooltip and accessible label for the Document Info rail button."
+  },
+  "tocEmpty": "No table of contents",
+  "@tocEmpty": {
+    "description": "Empty state text shown in the TOC panel when the document has no bookmarks."
+  },
+  "thumbnailPageLabel": "Page {n}",
+  "@thumbnailPageLabel": {
+    "description": "Accessible label for a page thumbnail cell. The placeholder is the 1-based page number.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "annotationNote": "Note",
+  "@annotationNote": {
+    "description": "Label for a text (note) annotation type badge."
+  },
+  "annotationHighlight": "Highlight",
+  "@annotationHighlight": {
+    "description": "Label for a highlight annotation type badge."
+  },
+  "annotationsTotal": "{count, plural, =1{1 annotation} other{{count} annotations}}",
+  "@annotationsTotal": {
+    "description": "Total annotation count shown in the annotations panel header.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "annotationsNoneFound": "No annotations found",
+  "@annotationsNoneFound": {
+    "description": "Empty state text shown in the annotations panel when no note or highlight annotations are present."
+  },
+  "annotationToggleOn": "Hide annotations in PDF",
+  "@annotationToggleOn": {
+    "description": "Accessible label for the annotation toggle when annotations are currently visible (tapping will hide them)."
+  },
+  "annotationToggleOff": "Show annotations in PDF",
+  "@annotationToggleOff": {
+    "description": "Accessible label for the annotation toggle when annotations are currently hidden (tapping will show them)."
+  },
+  "searchHint": "Search document…",
+  "@searchHint": {
+    "description": "Placeholder text shown inside the search input field."
+  },
+  "searchClear": "Clear search",
+  "@searchClear": {
+    "description": "Accessible label for the clear (×) button in the search input."
+  },
+  "searchResultsCount": "{count, plural, =0{No results} =1{1 result} other{{count} results}}",
+  "@searchResultsCount": {
+    "description": "Live count of search results shown above the result list.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchNoResults": "No results found",
+  "@searchNoResults": {
+    "description": "Empty state text shown in the search panel when a search returns no matches."
+  },
+  "searchResultPage": "Page {n}",
+  "@searchResultPage": {
+    "description": "Page number label on a search result card.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "zoomIn": "Zoom in",
+  "@zoomIn": {
+    "description": "Accessible label and tooltip for the zoom-in button."
+  },
+  "zoomOut": "Zoom out",
+  "@zoomOut": {
+    "description": "Accessible label and tooltip for the zoom-out button."
+  },
+  "zoomReset": "Reset zoom to 100%",
+  "@zoomReset": {
+    "description": "Accessible label for the zoom-level label/button that resets zoom to 100%."
+  },
+  "zoomFitPage": "Fit page",
+  "@zoomFitPage": {
+    "description": "Accessible label and tooltip for the fit-page zoom button."
+  },
+  "zoomFitWidth": "Fit width",
+  "@zoomFitWidth": {
+    "description": "Accessible label and tooltip for the fit-width zoom button."
+  },
+  "zoomLevel": "{percent}%",
+  "@zoomLevel": {
+    "description": "Current zoom level shown in the toolbar pill.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "infoTitle": "Title",
+  "@infoTitle": {
+    "description": "Label for the document title field in the info panel."
+  },
+  "infoAuthor": "Author",
+  "@infoAuthor": {
+    "description": "Label for the document author field in the info panel."
+  },
+  "infoSubject": "Subject",
+  "@infoSubject": {
+    "description": "Label for the document subject field in the info panel."
+  },
+  "infoKeywords": "Keywords",
+  "@infoKeywords": {
+    "description": "Label for the document keywords field in the info panel."
+  },
+  "infoCreator": "Creator",
+  "@infoCreator": {
+    "description": "Label for the creator application field in the info panel."
+  },
+  "infoProducer": "Producer",
+  "@infoProducer": {
+    "description": "Label for the producer application field in the info panel."
+  },
+  "infoCreationDate": "Created",
+  "@infoCreationDate": {
+    "description": "Label for the document creation date field in the info panel."
+  },
+  "infoModDate": "Modified",
+  "@infoModDate": {
+    "description": "Label for the document last-modified date field in the info panel."
+  },
+  "infoFileName": "File name",
+  "@infoFileName": {
+    "description": "Label for the file name field in the document info panel."
+  },
+  "infoFilePath": "Location",
+  "@infoFilePath": {
+    "description": "Label for the file path field in the document info panel."
+  },
+  "infoFileSize": "File size",
+  "@infoFileSize": {
+    "description": "Label for the file size field in the document info panel."
+  },
+  "infoPageCount": "Pages",
+  "@infoPageCount": {
+    "description": "Label for the page count field in the document info panel."
+  },
+  "infoPdfVersion": "PDF version",
+  "@infoPdfVersion": {
+    "description": "Label for the PDF version field in the document info panel."
+  },
+  "infoFsCreated": "Created on disk",
+  "@infoFsCreated": {
+    "description": "Label for the filesystem creation date of the file in the info panel."
+  },
+  "infoFsModified": "Modified on disk",
+  "@infoFsModified": {
+    "description": "Label for the filesystem last-modified date of the file in the info panel."
+  },
+  "openFile": "Open file",
+  "@openFile": {
+    "description": "Accessible label for the open-file icon button in the top bar."
+  }
+}

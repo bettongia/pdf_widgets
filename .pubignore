@@ -1,0 +1,47 @@
+.claude
+.dart_tool
+build/
+coverage/
+doc/
+docs/
+
+Containerfile
+Makefile
+VERSION_*
+addlicense_config.txt
+tool/
+downloads/
+logs/
+packages/
+header_template.txt
+CLAUDE.md
+site/
+*.log
+
+# IDE and OS specific files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.log
+
+# =========================================================================
+# Example app exclusions
+# =========================================================================
+# Do NOT ignore the whole /example folder, as pub.dev requires it
+# to display the "Example" tab on your package page.
+
+# Ignore build artifacts and generated code inside the example app
+example/.dart_tool/
+example/.flutter-plugins
+example/.flutter-plugins-dependencies
+example/.packages
+example/build/
+example/pubspec.lock
+
+# Ignore platform-specific build outputs inside the example app
+example/android/app/debug/
+example/android/app/profile/
+example/android/app/release/
+example/ios/Flutter/.last_build_id
+example/design/Flutter Handoff (standalone).html
