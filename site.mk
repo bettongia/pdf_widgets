@@ -10,7 +10,7 @@ REPO_URL    := $(shell awk '/^repository:/{print $$2}'  pubspec.yaml)
 _HEADER := $(SITE_DIR)/_header.html
 _INDEX  := $(SITE_DIR)/_index.md
 
-doc_site: $(SITE_DIR)/favicon.ico $(SITE_DIR)/bettongia-$(DOCS_DIR).css $(SITE_DIR)/index.html $(SITE_DIR)/spec.html $(SITE_DIR)/roadmap.html  $(SITE_DIR)/api/index.html coverage
+doc_site: $(SITE_DIR)/favicon.ico $(SITE_DIR)/bettongia-$(DOCS_DIR).css $(SITE_DIR)/index.html $(SITE_DIR)/quietly.html $(SITE_DIR)/spec.html $(SITE_DIR)/roadmap.html  $(SITE_DIR)/api/index.html coverage
 .PHONY: site
 
 $(SITE_DIR):
@@ -40,6 +40,9 @@ $(SITE_DIR)/favicon.ico: $(DOCS_DIR)/template/favicon.ico  | $(SITE_DIR)
 
 $(SITE_DIR)/index.html: $(_INDEX) $(DOCS_DIR)/.pandoc $(_HEADER) | $(SITE_DIR)
 	pandoc --defaults="$(DOCS_DIR)/.pandoc" $(_INDEX) README.md -o "$(SITE_DIR)/index.html";
+
+$(SITE_DIR)/quietly.html: example/README.md $(DOCS_DIR)/.pandoc $(_HEADER) | $(SITE_DIR)
+	pandoc --defaults="$(DOCS_DIR)/.pandoc" example/README.md -o "$(SITE_DIR)/quietly.html";
 
 $(SITE_DIR)/spec.html: $(DOCS_DIR)/spec/*.md $(DOCS_DIR)/.pandoc $(_HEADER) | $(SITE_DIR)
 	pandoc --defaults="$(DOCS_DIR)/.pandoc" --mathml $(DOCS_DIR)/spec/*.md -o "$(SITE_DIR)/spec.html";
