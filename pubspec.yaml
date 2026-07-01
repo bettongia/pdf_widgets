@@ -3,10 +3,14 @@ description:
   A Flutter package wrapping the PDFium library for PDF rendering, text
   extraction, and annotation support.
 version: 0.1.0-dev.1
-publish_to: none
 repository: https://github.com/bettongia/pdf_widgets
 issue_tracker: https://github.com/bettongia/pdf_widgets/issues
 homepage: https://bettongia.github.io/pdf_widgets
+
+topics:
+  - pdfium
+  - pdf
+  - ffi
 
 environment:
   sdk: ^3.12.0
@@ -15,8 +19,6 @@ dependencies:
   flutter:
     sdk: flutter
   betto_pdfium: ^0.1.0-dev.2
-  #betto_pdfium:
-  #  path: ../pdfium/packages/betto_pdfium
 
   intl: ^0.20.0
 
