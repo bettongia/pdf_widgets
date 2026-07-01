@@ -2,7 +2,7 @@ name: betto_pdf_widgets
 description:
   A Flutter package wrapping the PDFium library for PDF rendering, text
   extraction, and annotation support.
-version: 0.1.0-dev.1
+version: 0.1.0-dev.2
 repository: https://github.com/bettongia/pdf_widgets
 issue_tracker: https://github.com/bettongia/pdf_widgets/issues
 homepage: https://bettongia.github.io/pdf_widgets
